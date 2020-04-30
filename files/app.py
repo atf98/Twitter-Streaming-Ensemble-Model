@@ -171,11 +171,3 @@ if __name__ == '__main__':
     tweet_stream.start()
     process_tweets(tweet_queue)
 
-
-# Load all classifiers from the pickled files
-# function to load models given filepath
-def load_model(file_path):
-    classifier_f = open(file_path, "rb")
-    classifier = pickle.load(classifier_f)
-    classifier_f.close()
-    return classifier
